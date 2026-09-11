@@ -3,7 +3,7 @@
 # Cambiar explícitamente al directorio del proyecto
 cd /home/pi/projects/display-on-eink-random-photo || exit 1
 
-LOG_DIR="logs"
+LOG_DIR="logs/eink_random_photo"
 mkdir -p "$LOG_DIR"
 
 TIMESTAMP=$(date +%Y%m%d)
