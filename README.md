@@ -1,3 +1,4 @@
+<img width="4096" height="3072" alt="IMG20260912174752" src="https://github.com/user-attachments/assets/6b4e3112-0cf1-4c17-aa0a-4be91b07ce49" />
 # waveshare-eink-pi-zero-photo-frame
 
 Automated scheduled e-Paper photo frame pipeline for Raspberry Pi Zero and Waveshare B&W displays, featuring multi-provider API support (Unsplash, Pixabay, Pexels, Quotes, Wikipedia, etc) and cron orchestration. 
@@ -62,6 +63,9 @@ Before mounting the board, verify that the DIP switches on the **Waveshare e-Pap
 2. Carefully route the display's ribbon cable (FPC) through a small cutout in the frame's MDF backboard.
 3. Secure the small FPC connector board onto the outer side of the MDF backboard using tape, ensuring it stays firmly in place.
 4. With the FPC board taped down, connect the display's ribbon cable to one side and the longer white flat flexible cable (FFC) to the other side.
+
+<img width="4096" height="3072" alt="IMG20260912174752" src="https://github.com/user-attachments/assets/ba13d943-92e1-470f-afa6-4738168bfd62" />
+
 
 #### Step 3: Stacking & Mounting the Raspberry Pi & HAT
 1. **Mark Hole Locations:** Place the Raspberry Pi Zero W and Waveshare HAT on the backboard to mark the 4 mounting holes with a pencil.
