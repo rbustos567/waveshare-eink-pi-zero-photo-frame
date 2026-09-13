@@ -1,4 +1,3 @@
-<img width="4096" height="3072" alt="IMG20260912174752" src="https://github.com/user-attachments/assets/6b4e3112-0cf1-4c17-aa0a-4be91b07ce49" />
 # waveshare-eink-pi-zero-photo-frame
 
 Automated scheduled e-Paper photo frame pipeline for Raspberry Pi Zero and Waveshare B&W displays, featuring multi-provider API support (Unsplash, Pixabay, Pexels, Quotes, Wikipedia, etc) and cron orchestration. 
