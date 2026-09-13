@@ -45,7 +45,7 @@ This assembly guide is based on the design methodology from [this video tutorial
 ### 1. e-Paper HAT Hardware Configuration
 Before mounting the board, verify that the DIP switches on the **Waveshare e-Paper Driver HAT (Rev2.3)** are set correctly for the 7.5" e-Paper display:
 
-* **Display Config Switch:** Set to **A** (`3R`)
+* **Display Config Switch:** Set to **B** (`3R`)
 * **Interface Config Switch:** Set to **0** (`4-line SPI`)
 
 ---
