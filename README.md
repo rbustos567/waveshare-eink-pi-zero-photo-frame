@@ -121,3 +121,8 @@ Before mounting the board, verify that the DIP switches on the **Waveshare e-Pap
    # Example: Update e-ink screen with random photo every 2 hrs from 9 AM to 9 PM
    0 9-21/2 * * * /home/pi/projects/display-on-eink-random-photo/run_on_cron_display_photo_eink.sh
 ```
+## Project Gallery
+
+<img width="4096" height="3072" alt="IMG20260912121156" src="https://github.com/user-attachments/assets/2805f0bf-7b78-4033-917f-7a08f2bf3131" />
+<img width="3072" height="4096" alt="IMG20260912121205" src="https://github.com/user-attachments/assets/20fbdb56-738a-40d6-8147-2f024b94334f" />
+
