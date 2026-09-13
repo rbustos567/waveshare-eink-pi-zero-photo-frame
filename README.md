@@ -65,7 +65,6 @@ Before mounting the board, verify that the DIP switches on the **Waveshare e-Pap
 
 <img width="4096" height="3072" alt="IMG20260912174752" src="https://github.com/user-attachments/assets/ba13d943-92e1-470f-afa6-4738168bfd62" />
 
-
 #### Step 3: Stacking & Mounting the Raspberry Pi & HAT
 1. **Mark Hole Locations:** Place the Raspberry Pi Zero W and Waveshare HAT on the backboard to mark the 4 mounting holes with a pencil.
 2. **Punch Guide Holes:** Using the pin/nail and hammer, punch small pilot holes through the MDF backboard.
@@ -76,6 +75,8 @@ Before mounting the board, verify that the DIP switches on the **Waveshare e-Pap
    * Thread the **4 × M2.5 (6mm + 6mm) Male-Female standoffs** through the Raspberry Pi mounting holes into the lower standoffs to lock the Pi in place.
    * Align and plug the **Waveshare e-Paper Driver HAT** directly onto the Raspberry Pi Zero W 40-pin GPIO header.
    * Secure the HAT on top using 4 × M2.5 screws and tighten gently using pliers and precision screwdriver.
+
+<img width="4096" height="3072" alt="IMG20260912174725" src="https://github.com/user-attachments/assets/c198e806-ffce-43f3-bcf4-d96dea5ba670" />
 
 #### Step 4: Interconnections & Power
 1. Connect the white flat flexible cable (FFC) from the FPC extension board directly to the main ribbon connector on the Waveshare HAT.
