@@ -62,20 +62,19 @@ Before mounting the board, verify that the DIP switches on the **Waveshare e-Pap
 2. Carefully route the display's ribbon cable (FPC) through a small cutout in the frame's MDF backboard.
 3. Secure the small FPC connector board onto the outer side of the backboard using tape, allowing easy connection between the display's ribbon cable and the longer white flat flexible cable (FFC).
 
-#### Step 3: Mounting the Raspberry Pi & Waveshare HAT
+#### Step 3: Stacking & Mounting the Raspberry Pi & HAT
 1. **Mark Hole Locations:** Place the Raspberry Pi Zero W and Waveshare HAT on the backboard to mark the 4 mounting holes with a pencil.
 2. **Punch Guide Holes:** Using the pin/nail and hammer, punch small pilot holes through the MDF backboard.
-3. **Assemble the Hardware Stack:**
-   * Insert 4 × M2.5 screws from the front/inside of the backboard through the pre-punched holes.
+3. **Assemble the Standoffs & Boards:**
+   * Insert 4 × M2.5 screws from the inside of the backboard through the pre-punched holes.
    * Screw the **4 × M2.5 (8mm) Female-Female nylon standoffs** onto the backboard.
    * Place the **Raspberry Pi Zero W** over the 8mm standoffs.
    * Thread the **4 × M2.5 (6mm + 6mm) Male-Female standoffs** through the Raspberry Pi mounting holes into the lower standoffs to lock the Pi in place.
    * Align and plug the **Waveshare e-Paper Driver HAT** directly onto the Raspberry Pi Zero W 40-pin GPIO header.
-   * Secure the HAT on top using 4 × M2.5 screws.
-   * Tighten gently using pliers and precision screwdriver.
+   * Secure the HAT on top using 4 × M2.5 screws and tighten gently using pliers and precision screwdriver.
 
-#### Step 4: Final Interconnections & Power
-1. Connect the white flat flexible cable (FFC) from the FPC extension board to the main ribbon connector on the Waveshare HAT.
+#### Step 4: Interconnections & Power
+1. Connect the white flat flexible cable (FFC) from the FPC extension board directly to the main ribbon connector on the Waveshare HAT.
 2. Plug the Micro-USB power cable from the 5V/4A power supply into the power port of the Raspberry Pi Zero W.
 3. Re-attach the backboard tabs onto the frame to lock everything securely.
 
