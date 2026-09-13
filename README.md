@@ -45,7 +45,7 @@ This assembly guide is based on the design methodology from [this video tutorial
 ### 1. e-Paper HAT Hardware Configuration
 Before mounting the board, verify that the DIP switches on the **Waveshare e-Paper Driver HAT (Rev2.3)** are set correctly for the 7.5" e-Paper display:
 
-* **Display Config Switch:** Set to **B** (`3R`)
+* **Display Config Switch:** Set to **B** (`0.47R`)
 * **Interface Config Switch:** Set to **0** (`4-line SPI`)
 
 ---
@@ -60,7 +60,8 @@ Before mounting the board, verify that the DIP switches on the **Waveshare e-Pap
 #### Step 2: Backboard Preparation & FPC Extension Mounting
 1. Position the e-Paper display and cardstock mat behind the frame glass.
 2. Carefully route the display's ribbon cable (FPC) through a small cutout in the frame's MDF backboard.
-3. Secure the small FPC connector board onto the outer side of the backboard using tape, allowing easy connection between the display's ribbon cable and the longer white flat flexible cable (FFC).
+3. Secure the small FPC connector board onto the outer side of the MDF backboard using tape, ensuring it stays firmly in place.
+4. With the FPC board taped down, connect the display's ribbon cable to one side and the longer white flat flexible cable (FFC) to the other side.
 
 #### Step 3: Stacking & Mounting the Raspberry Pi & HAT
 1. **Mark Hole Locations:** Place the Raspberry Pi Zero W and Waveshare HAT on the backboard to mark the 4 mounting holes with a pencil.
