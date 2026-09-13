@@ -83,6 +83,8 @@ Before mounting the board, verify that the DIP switches on the **Waveshare e-Pap
 2. Plug the Micro-USB power cable from the 5V/4A power supply into the power port of the Raspberry Pi Zero W.
 3. Re-attach the backboard tabs onto the frame to lock everything securely.
 
+<img width="3072" height="4096" alt="IMG20260912174707" src="https://github.com/user-attachments/assets/1f5c7073-1a0f-4664-a4de-dfc4d22ed787" />
+
 ---
 
 ## Software Installation steps
