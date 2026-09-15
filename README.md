@@ -87,6 +87,22 @@ Before mounting the board, verify that the DIP switches on the **Waveshare e-Pap
 
 ---
 
+## Operating System Setup
+
+Before assembling the hardware, prepare the MicroSD card with the required operating system:
+
+1. Download and launch **Raspberry Pi Imager** on your computer.
+2. Under **Raspberry Pi Device**, select **Raspberry Pi Zero W**.
+3. Under **Operating System**, choose **Raspberry Pi OS Lite (32-bit)** (*A port of Debian with no desktop environment*).
+4. Under **Storage**, select your MicroSD card.
+5. Click **Next** and configure the OS customization settings (OS Customization / Advanced Options):
+   * Enable **SSH** (using password or public key authentication).
+   * Set your hostname, username, and password.
+   * Configure your **Wi-Fi credentials** (SSID and Password) and country code so the board connects automatically upon booting.
+6. Write the image to the MicroSD card and insert it into the Raspberry Pi Zero W.
+
+---
+
 ## Software Installation steps
 1. Clone dependency repositories
 ```bash
