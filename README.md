@@ -100,6 +100,7 @@ Before assembling the hardware, prepare the MicroSD card with the required opera
    * Set your hostname, username, and password.
    * Configure your **Wi-Fi credentials** (SSID and Password) and country code so the board connects automatically upon booting.
 6. Write the image to the MicroSD card and insert it into the Raspberry Pi Zero W.
+7. Keep in mind that the first you boot it will take several minutes to see the device in your network and ssh into it. Be very patient.
 
 ---
 
