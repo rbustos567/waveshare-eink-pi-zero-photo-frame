@@ -116,21 +116,18 @@ Before assembling the hardware, prepare the MicroSD card with the required opera
    git clone https://github.com/rbustos567/waveshare-eink-pi-zero-photo-frame.git
    cd waveshare-eink-pi-zero-photo-frame
 ```
-3. Configure setting variables in script.conf and info_script.conf
+3. Configure path of scripts and other variables 
 ```bash
-   vim script.conf
-   vim info_script.conf
+   vim frame.conf
 ```
-4. Set API Keys for Photo Sites in .env
+4. Set API Keys for Photo Sites in providers.json of multi-provider-url-image-fetcher
 ```bash
-   vim .env
+   vim providers.json
 ```
 5. Set execution permission to all bash scripts
 ```bash
-   chmod +x display_on_eink_random_photo_from_url.sh
-   chmod +x run_on_cron_display_photo_eink.sh
-   chmod +x display_on_eink_random_info_from_api_url.sh
-   chmod +x run_on_cron_display_info_eink.sh
+   chmod +x run_on_cron_display_on_eink.sh
+   chmod +x display_on_eink_random_info_photo.sh
 ```
 6. Copy lines from contab.txt to crontab
 ```bash
