@@ -1,20 +1,7 @@
 #!/usr/bin/env bash
 
-# Ensure script is executed with root privileges
-if [ "$EUID" -ne 0 ]; then
-    echo "[INFO] Re-running script with sudo privileges..." >&2
-    exec sudo "$0" "$@"
-fi
-
 # Load main configuration file
 CONFIG_FILE="${CONFIG_FILE:-frame.conf}"
-
-#if [ -f "$CONFIG_FILE" ]; then
-#    export $(grep -v '^#' "$CONFIG_FILE" | xargs)
-#else
-#    echo "[ERROR] Configuration file '$CONFIG_FILE' not found." >&2
-#    exit 1
-#fi
 
 if [ -f "$CONFIG_FILE" ]; then
     set -a
