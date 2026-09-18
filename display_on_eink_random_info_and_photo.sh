@@ -90,10 +90,24 @@ case "$MODE" in
         # Use provided query or fall back to DEFAULT_SEARCH_QUERY from conf
         SEARCH_QUERY="${QUERY:-${DEFAULT_SEARCH_QUERY:-landscape}}"
 
-        PROVIDERS=("unsplash" "pixabay" "pexels")
-        SELECTED_PROVIDER=${PROVIDERS[$RANDOM % ${#PROVIDERS[@]}]}
+        if [ -z "$PROVIDERS" ]; then
+            echo "[ERROR] 'PROVIDERS' variable is empty or not set in $CONFIG_FILE." >&2
+            exit 1
+        fi
 
-        echo "[INFO] Running PHOTO mode using $SELECTED_PROVIDER with query: \"$SEARCH_QUERY\"" >&2
+        # Convert space-separated string into a clean Bash array
+        PROVIDERS_ARRAY=($PROVIDERS)
+        TOTAL_PROVIDERS=${#PROVIDERS_ARRAY[@]}
+
+        if [ "$TOTAL_PROVIDERS" -eq 0 ]; then
+            echo "[ERROR] No presets found in PROVIDERS_ARRAY." >&2
+            exit 1
+        fi
+
+        RANDOM_INDEX=$(( RANDOM % TOTAL_PROVIDERS ))
+        SELECTED_PROVIDER="${PROVIDERS_ARRAY[$RANDOM_INDEX]}"
+
+        echo "[INFO] Running PHOTO mode using $SELECTED_PROVIDER (Index $RANDOM_INDEX of $TOTAL_PROVIDERS) with query: \"$SEARCH_QUERY\"" >&2
 
         IMAGE_URL=$(python3 "$PYTHON_FETCHER_PATH" \
           -u "$SELECTED_PROVIDER" \
