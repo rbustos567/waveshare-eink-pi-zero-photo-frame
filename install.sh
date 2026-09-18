@@ -163,22 +163,22 @@ echo ""
 
 # 6. Optional Cron Job installation
 echo "[INFO] Step 6/6: Crontab Configuration"
-CRON_CMD="0 9-21/2 * * * $CRON_SCRIPT random"
+CRON_CMD="0 9-21/1 * * * $CRON_SCRIPT random"
 
-read -p "Do you want to automatically add the 2-hour refresh schedule to root's crontab? [y/N]: " -n 1 -r
+read -p "Do you want to automatically add the 1-hour refresh schedule to crontab? [y/N]: " -n 1 -r
 echo ""
 
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-    if sudo crontab -l 2>/dev/null | grep -Fq "$CRON_SCRIPT"; then
-        echo "  - Cron job entry already exists in root's crontab. Skipping."
+    if crontab -l 2>/dev/null | grep -Fq "$CRON_SCRIPT"; then
+        echo "  - Cron job entry already exists in crontab. Skipping."
     else
-        (sudo crontab -l 2>/dev/null; echo "$CRON_CMD") | sudo crontab -
-        echo "  - Successfully added cron job to root's crontab:"
+        (crontab -l 2>/dev/null; echo "$CRON_CMD") | crontab -
+        echo "  - Successfully added cron job to crontab:"
         echo "    $CRON_CMD"
     fi
 else
     echo "  - Skipped automatic cron configuration."
-    echo "    To add it manually later, run 'sudo crontab -e' and paste:"
+    echo "    To add it manually later, run 'crontab -e' and paste:"
     echo "    $CRON_CMD"
 fi
 
