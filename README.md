@@ -109,16 +109,22 @@ Before assembling the hardware, prepare the MicroSD card with the required opera
 ```bash
    git clone https://github.com/rbustos567/waveshare-eink-pi-zero-photo-frame.git
 ```
-2. Enable execution permission to scripts
+2. Install dependency repositories
+```bash
+   cd ../eink-api-renderer
+   chmod +x install.sh
+   sudo ./install.sh
+```
+3. Enable execution permission to scripts
 ```bash
    cd waveshare-eink-pi-zero-photo-frame
    chmod +x *.sh
 ```
-3. Run installation script
+4. Run installation script
 ```bash
    ./install.sh
 ```
-4. Populate api_key with you API key in providers.json for image providers that are required, for example: unsplash, pixabay and pexels
+5. Populate api_key with you API key in providers.json for image providers that are required, for example: unsplash, pixabay and pexels
 ```bash
    vim ../multi-provider-url-image-fetcher/providers.json
 ```
