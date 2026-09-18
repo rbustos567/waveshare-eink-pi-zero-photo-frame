@@ -105,35 +105,18 @@ Before assembling the hardware, prepare the MicroSD card with the required opera
 ---
 
 ## Software Installation steps
-1. Clone dependency repositories
-```bash
-   git clone https://github.com/rbustos567/multi-provider-url-image-fetcher.git
-   git clone https://github.com/rbustos567/url-image-to-eink.git
-   git clone https://github.com/rbustos567/eink-api-renderer.git
-```
-2. Clone this repository
+1. Clone this repository
 ```bash
    git clone https://github.com/rbustos567/waveshare-eink-pi-zero-photo-frame.git
+```
+2. Enable execution permission to scripts
+```bash
    cd waveshare-eink-pi-zero-photo-frame
+   chmod +x *.sh
 ```
-3. Configure path of scripts and other variables 
+3. Run installation script
 ```bash
-   vim frame.conf
-```
-4. Set API Keys for Photo Sites in providers.json of multi-provider-url-image-fetcher
-```bash
-   vim providers.json
-```
-5. Set execution permission to all bash scripts
-```bash
-   chmod +x run_on_cron_display_on_eink.sh
-   chmod +x display_on_eink_random_info_photo.sh
-```
-6. Copy lines from contab.txt to crontab
-```bash
-   crontab -e
-   # Example: Update e-ink screen with random photo every 2 hrs from 9 AM to 9 PM
-   0 9-21/2 * * * /home/pi/projects/display-on-eink-random-photo/run_on_cron_display_photo_eink.sh
+   ./install.sh
 ```
 ## Project Gallery
 
