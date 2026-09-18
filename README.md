@@ -114,6 +114,9 @@ Before assembling the hardware, prepare the MicroSD card with the required opera
    cd ../eink-api-renderer
    chmod +x install.sh
    sudo ./install.sh
+   cd ../url-image-to-eink
+   chmod +x install.sh
+   sudo ./install.sh
 ```
 3. Enable execution permission to scripts
 ```bash
