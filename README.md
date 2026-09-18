@@ -1,6 +1,6 @@
 # waveshare-eink-pi-zero-photo-frame
 
-Automated scheduled e-Paper photo frame pipeline for Raspberry Pi Zero and Waveshare B&W displays, featuring multi-provider API support (Unsplash, Pixabay, Pexels, Quotes, Wikipedia, etc) and cron orchestration. 
+Automated e-Paper photo and info frame for Raspberry Pi Zero W and 7.5" e-Paper Display, powered by dynamic API content, multi-provider stock photo fetching, and robust power/cron orchestration. Automatically renders dynamic information presets (Wikipedia, quotes, trivia) or high-resolution photos (Unsplash, Pexels, Pixabay) with automated log rotation.
 
 ## Features
 
