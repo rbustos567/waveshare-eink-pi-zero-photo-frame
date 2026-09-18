@@ -118,6 +118,48 @@ Before assembling the hardware, prepare the MicroSD card with the required opera
 ```bash
    ./install.sh
 ```
+4. Populate api_key with you API key in providers.json for image providers that are required, for example: unsplash, pixabay and pexels
+```bash
+   vim ../multi-provider-url-image-fetcher/providers.json
+```
+
+## Usage Examples
+
+The wrapper script `run_on_cron_display_on_eink.sh` acts as the primary execution interface for both manual triggers and automated cron jobs. It handles logging, log rotation (14 days), directory navigation, and argument passing.
+
+## Execution Examples
+
+1. Automatic Selection
+Runs the frame in random mode, picking either an information preset or a photo using the default search query:
+```bash
+   ./run_on_cron_display_on_eink.sh random
+```
+2. Display Dynamic information
+Forces the frame to query the API renderer and display textual info/facts:
+```bash
+   ./run_on_cron_display_on_eink.sh info
+```
+3. Display Photo with Default Query
+Forces photo mode using DEFAULT_SEARCH_QUERY (e.g., "street photography") defined in frame.conf:
+```bash
+   ./run_on_cron_display_on_eink.sh photo
+```
+4. Display Photo with Custom Query
+Overrides the default search query with a custom phrase (enclosed in double quotes if it contains spaces):
+```bash
+   ./run_on_cron_display_on_eink.sh photo "minimalist architecture"
+```
+5. Omit Mode Parameter
+If no arguments are provided, the script automatically defaults to random:
+```bash
+   ./run_on_cron_display_on_eink.sh
+```
+Logs and Outputs
+All console outputs, timestamps, and error traces are automatically directed to daily log files inside the logs/ directory:
+```bash
+   # View today's execution logs in real time
+   tail -f logs/run_$(date +%Y%m%d).log
+```
 ## Project Gallery
 
 <img width="4096" height="3072" alt="IMG20260912121156" src="https://github.com/user-attachments/assets/2805f0bf-7b78-4033-917f-7a08f2bf3131" />
