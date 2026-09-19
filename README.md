@@ -107,6 +107,7 @@ Before assembling the hardware, prepare the MicroSD card with the required opera
 ## Software Installation steps
 1. Clone this repository
 ```bash
+   sudo apt install vim git -y
    git clone https://github.com/rbustos567/waveshare-eink-pi-zero-photo-frame.git
 ```
 2. Install dependency repositories
