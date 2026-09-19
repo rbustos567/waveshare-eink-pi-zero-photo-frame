@@ -117,9 +117,6 @@ Before assembling the hardware, prepare the MicroSD card with the required opera
    cd eink-api-renderer
    chmod +x install.sh
    sudo ./install.sh
-   cd ../multi-provider-url-image-fetcher
-   chmod +x install.sh
-   sudo ./install.sh
 ```
 3. Enable execution permission to scripts
 ```bash
