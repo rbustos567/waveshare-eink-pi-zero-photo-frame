@@ -120,7 +120,7 @@ Before assembling the hardware, prepare the MicroSD card with the required opera
 ```
 3. Enable execution permission to scripts
 ```bash
-   cd waveshare-eink-pi-zero-photo-frame
+   cd ../waveshare-eink-pi-zero-photo-frame
    chmod +x *.sh
 ```
 4. Run installation script
