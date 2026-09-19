@@ -112,10 +112,12 @@ Before assembling the hardware, prepare the MicroSD card with the required opera
 ```
 2. Install dependency repositories
 ```bash
-   cd ../eink-api-renderer
+   git clone https://github.com/rbustos567/eink-api-renderer.git
+   git clone https://github.com/rbustos567/multi-provider-url-image-fetcher.git
+   cd eink-api-renderer
    chmod +x install.sh
    sudo ./install.sh
-   cd ../url-image-to-eink
+   cd ../multi-provider-url-image-fetcher
    chmod +x install.sh
    sudo ./install.sh
 ```
