@@ -114,7 +114,11 @@ Before assembling the hardware, prepare the MicroSD card with the required opera
 ```bash
    git clone https://github.com/rbustos567/eink-api-renderer.git
    git clone https://github.com/rbustos567/multi-provider-url-image-fetcher.git
+   git clone https://github.com/rbustos567/url-image-to-eink
    cd eink-api-renderer
+   chmod +x install.sh
+   sudo ./install.sh
+   cd ../url-image-to-eink
    chmod +x install.sh
    sudo ./install.sh
 ```
