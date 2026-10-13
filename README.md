@@ -96,8 +96,8 @@ To stabilize power delivery without dismantling a compact sandwich assembly, you
 * **Placement:** Solder directly to the back of the GPIO header:
   * **Positive (+ / Longer leg):** Pin 2 or 4 (5V Power)
   * **Negative (- / Shorter leg / Marked with stripe or '0'):** Pin 6 (Ground)
-
-<img width="945" height="682" alt="Raspberry-PI-Zero-Pinout-schema-2159177427" src="https://github.com/user-attachments/assets/2358522c-8325-4481-8b7c-849292ac6517" />
+    
+<img width="945" height="682" alt="Raspberry-PI-Zero-Pinout-schema-2159177427" src="https://github.com/user-attachments/assets/e0fbb64c-eb0c-4d26-aa94-4c0856eca08f" />
 <img width="3072" height="4096" alt="IMG20261012192039" src="https://github.com/user-attachments/assets/4accfa19-076f-4045-afbd-e945964505fa" />
 <img width="3072" height="4096" alt="IMG20261012190918" src="https://github.com/user-attachments/assets/747113e9-3cf4-4c2e-9597-5e5d1b224475" />
 
