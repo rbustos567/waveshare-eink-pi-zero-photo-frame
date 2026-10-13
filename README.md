@@ -85,6 +85,17 @@ Before mounting the board, verify that the DIP switches on the **Waveshare e-Pap
 
 <img width="3072" height="4096" alt="IMG20260912174707" src="https://github.com/user-attachments/assets/f6178fe5-d90f-4266-ac52-40f9b761cefc" />
 
+#### IMPORTANT: Troubleshooting: Power Stability & e-Paper Refreshes ####
+
+If your Raspberry Pi Zero W reboots or experiences brownouts when the e-Paper display triggers a full refresh, it is caused by sudden high-current demands exceeding the steady power supply.
+
+### The Hardware Fix (Capacitor Buffer)
+To stabilize power delivery without dismantling a compact sandwich assembly, you can solder a local energy reservoir directly to the rear of the GPIO pins:
+
+* **Component:** 1000 µF electrolytic capacitor (16V or 25V).
+* **Placement:** Solder directly to the back of the GPIO header:
+  * **Positive (+ / Longer leg):** Pin 2 or 4 (5V Power)
+  * **Negative (- / Shorter leg / Marked with stripe or '0'):** Pin 6 (Ground)
 ---
 
 ## Operating System Setup
